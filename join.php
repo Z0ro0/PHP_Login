@@ -8,7 +8,7 @@ $sel = $_POST['sel'];
 
 include('./db_conn.php');
 
-$query = "insert into member_join(uid,upassword,uname,utel,uemail,ucity) values('$uid','$upassword','$uname','$utel','$uemail','$sel')";
+$query = "insert into member_join(uid,upassword,uname,utel,uemail,ucity)values('$uid','$upassword','$uname','$utel','$uemail','$sel')";
 mysqli_query($conn, $query);
 echo "<script>alert('가입되었습니다')</script>";
 ?>
